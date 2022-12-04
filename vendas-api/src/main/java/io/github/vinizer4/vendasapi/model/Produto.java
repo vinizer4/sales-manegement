@@ -40,6 +40,7 @@ public class Produto {
     }
 
     public Produto(Long id, String nome, String descricao, BigDecimal preco, String sku) {
+        super();
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
@@ -102,12 +103,8 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", preco=" + preco +
-                ", sku='" + sku + '\'' +
-                '}';
+        return "Produto [id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", preco=" + preco + ", sku=" + sku
+                + "]";
     }
+
 }

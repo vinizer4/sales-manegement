@@ -21,14 +21,8 @@ public class ProdutoFormRequest {
         super();
     }
 
-    public ProdutoFormRequest(
-            Long id,
-            String descricao,
-            String nome,
-            BigDecimal preco,
-            String sku,
-            LocalDate cadastro
-    ) {
+    public ProdutoFormRequest(Long id, String descricao,
+                              String nome, BigDecimal preco, String sku, LocalDate cadastro) {
         super();
         this.id = id;
         this.descricao = descricao;
@@ -103,12 +97,7 @@ public class ProdutoFormRequest {
 
     @Override
     public String toString() {
-        return "ProdutoFormRequest{" +
-                "id=" + id +
-                ", descricao='" + descricao + '\'' +
-                ", nome='" + nome + '\'' +
-                ", preco=" + preco +
-                ", sku='" + sku + '\'' +
-                '}';
+        return "ProdutoFormRequest [id=" + id + ", descricao=" + descricao + ", nome=" + nome + ", preco=" + preco
+                + ", sku=" + sku + "]";
     }
 }
